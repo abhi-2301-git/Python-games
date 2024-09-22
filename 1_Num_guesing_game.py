@@ -1,3 +1,4 @@
+import random
 def check_guess(rand_num,total_guess):
     while total_guess < 3:
         #try block so that user enters valid number
@@ -23,6 +24,6 @@ def check_guess(rand_num,total_guess):
     if total_guess == 3:
         print(f"Sorry you lost , the number was {rand_num}")
         
-rand_num=42
+rand_num=random.randint(0,100)
 total_guess=0
 check_guess(rand_num,total_guess)
