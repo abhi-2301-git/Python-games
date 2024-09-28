@@ -10,7 +10,7 @@ def set_alarm(alarm_time):
 
         if current_time == alarm_time:
             print("Time to wake up!")
-            playsound(r'D:\CODE\Python\Basic-projects\alarm_sound.mp3')  
+            playsound('alarm_sound.mp3')  
             break
             
         time.sleep(1)
