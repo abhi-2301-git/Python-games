@@ -18,7 +18,6 @@ while True:
             for i in range(0,4):
                 if n[i] == random_num_str[i]:
                     correct[i]=n[i]
-                    tries+=1
         except IndexError as err:
             print(err,"Enter a 4 digit guess")
 
