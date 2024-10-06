@@ -20,9 +20,6 @@ while True:
                     correct[i]=n[i]
         except IndexError as err:
             print(err,"Enter a 4 digit guess")
-
-        else:
-            correct[i]='X'
                 
     print("current progress",''.join(correct))  
 
