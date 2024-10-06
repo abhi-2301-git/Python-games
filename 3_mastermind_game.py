@@ -4,10 +4,9 @@ rand_ = str(random.randint(1000,9999))
 def play():
     global rand_
     progress = ['X','X','X','X']
-    print(rand_)
     tries=0
     while True:
-        guess = input("Enter a guess")
+        guess = input("Enter a guess:")
         
         while len(guess) != 4 or not guess.isdigit():
             print("Please enter exactly 4 numeric digits.")
@@ -29,5 +28,7 @@ def play():
             
 
         print("current progress",''.join(progress))  
-
+        
+print("Welcome to Mastermind game")
+print("Here you have a guess a 4 digit number")
 play()
