@@ -3,7 +3,7 @@ rand_ = str(random.randint(1000,9999))
 
 def play():
     global rand_
-    progress = ['X','X','X','X',]
+    progress = ['X','X','X','X']
     print(rand_)
     tries=0
     while True:
